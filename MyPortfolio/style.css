@@ -68,10 +68,22 @@ h1{
 }
 
 .devPic img:hover{
-    transform: rotate(360deg); 
-    transition-duration: 1.5s;
-    transition-timing-function: linear;
-    
+    animation-name: devPic;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes devPic {
+    0%{
+  
+    }
+    50%{
+        transform: scale(0) rotate(1800deg); 
+    }
+    90%{
+        transform: scale(1) rotate(-360deg); 
+    }
 }
 
 .bgPic {
@@ -406,3 +418,6 @@ a{
     }
 }
 
+.devPic img:hover .superman img{
+    animation-play-state: running;
+}
