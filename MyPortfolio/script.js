@@ -32,7 +32,7 @@ const projObj = [
     }
 ]
 
-let projCont = document.querySelector('.project'); 
+let projCont = document.querySelector('.project');  
 
 projObj.map((projElement)=>{
     let proj = document.createElement('div'); 

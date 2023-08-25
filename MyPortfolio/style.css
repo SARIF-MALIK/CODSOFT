@@ -162,7 +162,7 @@ p{
 .projects{
     margin: 1rem 8rem;
     position: relative;
-    top: -350px; 
+    top: -450px; 
     text-align: center;
 }
 
@@ -181,9 +181,9 @@ p{
 }
 
 .project img{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .btn{
@@ -247,9 +247,52 @@ a{
     cursor: pointer;
 }
 
+.techSkills{
+    position: relative;
+    top: -350px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tech{
+    margin: 1rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+.icons{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icons:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.icons img{
+    box-sizing: content-box;
+    width: 6rem;
+    border: 2px dotted #181c30;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.footerHolder{
+    position: relative;
+    top: -350px;
+}
+
 .preFooter{
     position: relative;
-    top: -300px;
+    top: 80px;
     z-index: 5;
 }
 .preFooter .container{
@@ -269,16 +312,15 @@ a{
 
 .footer{
     background-color: #3e4670;
-    height: 630px;
-    position: relative;
-    top: -400px;
+    height: 730px;
+    padding-top: 100px;
+    /* position: relative;
+    top: -400px; */
 }
 
 .footer .container{
     margin: 1rem 8rem;
     padding: 1rem;
-    position: relative;
-    top: 150px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -299,6 +341,10 @@ a{
     border-radius: 50%;
     padding: 1rem;
     margin: 0 1rem;
+}
+
+.social-icons i:hover{
+    transform: scale(1.2) rotate(30deg); 
 }
 
 @media only screen and (max-width: 1000px){
@@ -421,3 +467,7 @@ a{
 .devPic img:hover .superman img{
     animation-play-state: running;
 }
+
+
+
+
