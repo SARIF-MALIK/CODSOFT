@@ -39,7 +39,7 @@ h1{
     
 }
 
-.title h1{
+.cursorAnimation{
     border-right: 5px solid;
     width: 100%;
     white-space: nowrap;
@@ -59,8 +59,8 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-  
 }
+
 
 .container div{
     margin: 2rem;
@@ -87,9 +87,9 @@ h1{
 
 .devPic img:hover{
     animation-name: devPic;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 }
 
 @keyframes devPic {
@@ -100,7 +100,7 @@ h1{
         transform: scale(0) rotate(1800deg); 
     }
     90%{
-        transform: scale(1) rotate(-360deg); 
+        transform: scale(1) rotate(0deg); 
     }
 }
 
@@ -457,41 +457,6 @@ a{
     .bgClr{
         height: 900px;
     }
-}
-
-.superman img{
-    position: absolute;
-    top: 400px;
-    left: -120px;
-    height: 80px;
-    width: 120px;
-
-    animation-name: supaman;
-    animation-duration: 4s;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
-    animation-delay: 1s;
-    animation-play-state: paused;
-}
-
-@keyframes supaman {
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(-150px) translateX(500px);
-    }
-    85%{
-        transform: translateX(500px) translateY(-200px);
-    }
-    100%{
-        transform: translateX(1800px) translateY(-300px);
-    }
-}
-
-.devPic img:hover .superman img{
-    animation-play-state: running;
 }
 
 
