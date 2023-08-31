@@ -77,7 +77,40 @@ h1{
 .devPic{
     display: flex;
     justify-content: center;
+    position: relative;
 }
+
+.msg{
+    border: 2px solid #181c30;
+    display: inline-block;
+    height: 10vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    position: absolute;
+    top: 50px;
+    right: -19vw;
+    border-radius: 0px 10px 10px;
+    padding: 5px;
+    text-align: center;
+    display: none;
+    transition: 2s ease-in;
+}
+
+.contact{
+    border: 2px solid #181c30;
+    display: inline-block;
+    height: 20vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    position: absolute;
+    bottom: 50px;
+    left: -16vw;
+    border-radius: 10px 0px 10px 10px;
+    padding: 5px;
+    text-align: center;
+    display: none;
+}
+
 .devPic img{
     width: 350px;
     border: 10px solid #353c66;
@@ -85,32 +118,26 @@ h1{
     padding: 15px;
 }
 
-.devPic img:hover{
-    animation-name: devPic;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
+/* .devPic img:hover{
+    transform:scale(1.1);
+} */
+
+.devPic:hover .show{
+    transition: 3s ease;
+    display: inline-block;
 }
 
-@keyframes devPic {
-    0%{
-  
-    }
-    50%{
-        transform: scale(0) rotate(1800deg); 
-    }
-    90%{
-        transform: scale(1) rotate(0deg); 
-    }
-}
 
 .bgPic {
     display: flex;
     justify-content: center;
+    
 }
 .bgPic img{
     width: 80%; 
 }
+
+
 
 .skills{
     margin: 3rem 8rem;
@@ -441,6 +468,9 @@ a{
         top: 100px;
     }
 
+    .devPic:hover .show{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 500px) {
