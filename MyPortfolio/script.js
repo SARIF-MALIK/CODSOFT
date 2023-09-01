@@ -47,16 +47,16 @@ projObj.map((projElement)=>{
     projCont.appendChild(proj); 
 })
 
-const devPic = document.querySelector('.devPic'); 
-const superman = document.querySelector('.superman img'); 
+// const devPic = document.querySelector('.devPic'); 
+// const superman = document.querySelector('.superman img'); 
 
-devPic.addEventListener('mouseover', ()=>{
-    superman.style.animationPlayState = 'running';  
-})
+// devPic.addEventListener('mouseover', ()=>{
+//     superman.style.animationPlayState = 'running';  
+// })
 
-devPic.addEventListener('mouseout', ()=>{
-    superman.style.animationPlayState = 'paused'; 
-})
+// devPic.addEventListener('mouseout', ()=>{
+//     superman.style.animationPlayState = 'paused'; 
+// })
 
 
 
