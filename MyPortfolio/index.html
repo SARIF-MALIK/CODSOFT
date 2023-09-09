@@ -8,6 +8,7 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
+  
   <title>MyPortfolio</title>
 </head>
 
@@ -23,7 +24,13 @@
   
   <section class="container colorAnimation">
     <div class="title">
-      <h1>Coder, Web Developer & Learner </h1>
+      <div class="textFlow cursorAnimation">
+        <span class="text first-text">I'm a</span>
+        <span class="text second-text">Coder</span>
+        <span class="text third-text">Web Developer</span>
+        <span class="text forth-text">& Learner</span>
+      </div>
+      <!-- <h1>Coder, Web Developer & Learner </h1> -->
       <p>I design and code beautifully simple things, and I love what I do.</p>
     </div>
     <div class="devPic"><img src="./assets/pic.jpg" alt="">
@@ -194,7 +201,15 @@
                 </div>
               </footer>
             </div>
-              <script src="./script.js"></script>
+              <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>  
+            <script>
+              var typed = new Typed('#element', {
+                strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+                typeSpeed: 50,
+              });
+            </script>
+            <script src="./script.js"></script>
+
             </body>
             
             </html>
